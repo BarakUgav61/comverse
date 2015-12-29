@@ -1,6 +1,13 @@
 html {
 	font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 }
 
 /* nav
@@ -43,18 +50,32 @@ html {
 	top: calc(50% - 0.5em);
 }
 
-.nav li + li {
+.nav li + li::before {
+	content: '';
+	background-image: url('img/divider.png');
+	background-repeat: no-repeat;
+	background-size: 1px 1.5em;
+	width: 1px;
+	height: 1.5em;
 	margin-right: 0.8em;
 	margin-left: 0.8em;
 	display: inline-block;
 	float: left;
 }
 
+.nav .u-plain-link {
+	color: black;
+}
+
 /* main
 ***************************************************/
 
 .main {
-	border: solid 1px black;
+	background-image: url("img/slide-bg-complexity.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: white;
 }
 
 .main-title {
@@ -89,13 +110,42 @@ html {
 #head-3th-col {
 	height: 10em;
 	position: relative;
+	cursor: pointer;
+}
+
+#head-1th-col {
+	background-color: rgba(255, 60, 159, 0.85);
+}
+
+#head-2th-col {
+	background-color: rgba(101, 193, 43, 0.85);
+}
+
+#head-3th-col {
+	background-color: rgba(226, 116, 0, 0.85);
+}
+
+#head .u-plain-link {
+	padding: 0.25em;
+	background-size: 1.8em;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0.5em;
+	display: block;
+	height: 1.5em;
 }
 
 /* solutions
 ***************************************************/
 
 .solutions {
-	border: solid 1px black;
+	background-color: #57B5D4;
+	color: white;
+}
+
+.solutions .u-center-box {
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
 }
 
 .solutions h2 {
@@ -125,7 +175,10 @@ html {
 ***************************************************/
 
 .events {	
-	border: solid 1px black;
+	background-image: url("img/news-and-events-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
 .events .u-center-box {
@@ -140,11 +193,24 @@ html {
 	margin-top: 0em;
 }
 
+.events h2,
+.events h3 {
+	color: white;
+}
+
 .events .event {
 	background-color: white;
 	padding: 0.6em;
 	margin-bottom: 1em;
 	border-radius: 0.2em;
+}
+
+.event .u-date {
+	box-sizing: border-box;
+	background-color: #3399CC;
+	float: left;
+	text-transform: uppercase;
+	width: 5em;
 }
 
 .event-content {
@@ -169,7 +235,8 @@ html {
 ***************************************************/
 
 .success-stories {
-	border: solid 1px black;
+	background-color: #ECECEC;	
+	color: #424242;
 }
 
 .success-stories .u-center-box {
@@ -245,7 +312,8 @@ html {
 
 .more {
 	position: relative;
-	border: solid 1px black;
+	background-color: #292929;
+	color: white;
 	font-size: 0.75em;
 }
 
@@ -259,7 +327,7 @@ html {
 }
 
 .more .u-four-cols:last-child {
-	border: solid 1px black;
+	background-color: #3F3F3F;
 	padding: 1em;
 }
 
@@ -296,6 +364,13 @@ html {
 	width: 5em;
 	text-transform: uppercase;
 	background-color: #40AEE4;
+	margin: 0;
+	color: white;
+}
+
+.more .u-copy-right {
+	position: absolute;
+	bottom: 0;
 	margin: 0;
 }
 
@@ -461,8 +536,30 @@ html {
 /* utility general style
 ***************************************************/
 
+.u-plain-link {
+	color: white;
+}
+
+.u-plain-link:link,
+.u-plain-link:visited,
+.u-plain-link:hover,
+.u-plain-link:active {
+	text-decoration: none;	
+}
+
+.u-link-button {
+	padding: 0.8em;
+	background-color: #2E97CB;
+	display: inline-block;
+}
+
+.u-copy-right {
+	color: #646464;
+}
+
 .u-cell {
-	border: solid 1px black;
+ 	background-color: white;
+ 	border-radius: 0.2rem;
 }
 
 .u-three-one-small-margin-row .u-cell {
