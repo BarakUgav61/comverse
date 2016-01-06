@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Comverse</title>
 
+	<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -19,13 +20,17 @@
 			</div>
 
 			<span class="u-search">
-				<input type="text" id="search-bar">
-				<a href=""><button></button></a>
+				<span id="search-bar">
+					<input type="text">
+					<a href="#" class="u-plain-link u-search-bar-close fa fa-close"></a>
+				</span>
+				<a href="#search-bar"><button></button></a>
 			</span>
 
-			<img class="logo" src="img/comverse-logo.png" alt="Comverse Logo">
+			<img class="logo" src="img/comverse-logo-medium.png" alt="Comverse Logo">
 
-			<ul class="u-clean-list u-clear-fix" id="">
+			<a href="#nav-bar"><button class="nav-button"></button></a>
+			<ul class="u-clean-list u-clear-fix" id="nav-bar">
 				<li><a class="u-plain-link" href="">Your Needs</a></li>
 				<li><a class="u-plain-link" href="">Out Portfolio</a></li>
 				<li><a class="u-plain-link" href="">News & Media</a></li>
@@ -39,21 +44,23 @@
 			
 			<div class="main-title">
 				<h1><span class="u-bold">Free</span> Your Markets From IT <span class="u-bold">Complexity</span></h1>
-				<p>Comverse Policy Studio <br>
+				<p>
+					Comverse Policy Studio <br>
 					<span class="u-bold">1st</span> Ever Marketign-Oriented Policy Tool
 				</p>
 			</div>
 			<div class="main-learnmore">
 				<a class="u-plain-link u-link-button" href=""><span>Learn More</span></a>
+
 				<div class="u-clean-checkbox">
 					<input type="radio" name="lean-more" value="1" id="head-checkbox-1" checked="checked">
-					<label for="head-checkbox-1"></label>
+					<label for="head-checkbox-1"><span>1</span></label>
 					<input type="radio" name="lean-more" value="2" id="head-checkbox-2">
-					<label for="head-checkbox-2"></label>
+					<label for="head-checkbox-2"><span>2</span></label>
 					<input type="radio" name="lean-more" value="3" id="head-checkbox-3">
-					<label for="head-checkbox-3"></label>
+					<label for="head-checkbox-3"><span>3</span></label>
 					<input type="radio" name="lean-more" value="4" id="head-checkbox-4">
-					<label for="head-checkbox-4"></label>
+					<label for="head-checkbox-4"><span>4</span></label>
 				</div>
 			</div>
 
@@ -80,27 +87,39 @@
 			<div class="solutions-types u-clear-fix">
 				<div class="u-six-cols" id="solution-1">
 					<img src="img/solution_icon_biz-analitics.png" alt="">
-					<p>Data monetization</p>
+					<div class="solution-text">
+						<p>Data monetization</p>
+					</div>
 				</div>
 				<div class="u-six-cols" id="solution-2">
 					<img src="img/solution_icon_diti-cx.png" alt="">
-					<p>Machine to machine (M2M)</p>
+					<div class="solution-text">
+						<p>Machine to machine (M2M)</p>
+					</div>
 				</div>
 				<div class="u-six-cols" id="solution-3">
 					<img src="img/solution_icon_smart-money.png" alt="">
-					<p>Over-the-top (OTT)</p>
+					<div class="solution-text">
+						<p>Over-the-top (OTT)</p>
+					</div>
 				</div>
 				<div class="u-six-cols" id="solution-4">
 					<img src="img/solution_icon_optimize-efficnt.png" alt="">
-					<p>Cloud computing</p>
+					<div class="solution-text">
+						<p>Cloud computing</p>
+					</div>
 				</div>
 				<div class="u-six-cols" id="solution-5">
 					<img src="img/solution_icon_personal.png" alt="">
-					<p>Managed services</p>
+					<div class="solution-text">
+						<p>Managed services</p>
+					</div>
 				</div>
 				<div class="u-six-cols" id="solution-6">
 					<img src="img/solution_icon_biz-transform.png" alt="">
-					<p>Social Media</p>
+					<div class="solution-text">
+						<p>Social Media</p>
+					</div>
 				</div>
 			</div>
 			<a class="u-plain-link u-link-button" href=""><span>See all of our solutaions</span></a>
@@ -229,13 +248,15 @@
 			</div>
 			
 			<a class="u-plain-link u-link-button u-clear-float" href=""><span>All 256 Success Stories</span></a>
+
+			<a href="#" class="u-up-button"></a>
 		</div>
 	</div>
 
 	<div class="more u-clear-float">
 		<div class="u-center-box u-clear-fix">
 			<ul class="more-menu u-clean-list">
-				<li class="u-four-cols">
+				<li class="u-four-cols u-normal">
 					<h4>Key Solutions</h4>
 					<ul class="u-clean-list">
 						<li><a href="" class="u-plain-link">Monetizing Data</a></li>
@@ -249,7 +270,7 @@
 						<li><a href="" class="u-plain-link">4G/LTE</a></li>
 					</ul>
 				</li>
-				<li class="u-four-cols">
+				<li class="u-four-cols u-normal">
 					<h4>Products & Services</h4>
 					<ul class="u-clean-list">
 						<li><a href="" class="u-plain-link">Billing</a></li>
@@ -259,7 +280,7 @@
 						<li><a href="" class="u-plain-link">Training Services</a></li>
 					</ul>
 				</li>
-				<li class="u-four-cols">
+				<li class="u-four-cols u-normal">
 					<h4>Company</h4>
 					<ul class="u-clean-list">
 						<li><a href="" class="u-plain-link">executive profiles</a></li>
@@ -274,24 +295,36 @@
 				<li class="u-four-cols u-text-center">
 					<ul class="u-clean-list">
 						<li class="latest-blogs">
-							<h4>Latest Blog Posts</h4>
-							<div class="u-date">
-								<span>18</span>
-								<span>July</span>
+							<span class="u-mobile"><a href="" class="u-plain-link">Contact Us</a></span>
+							<div class="u-normal">
+								<h4>Latest Blog Posts</h4>
+								<div class="u-date">
+									<span>18</span>
+									<span>July</span>
+								</div>
+								<p>Comverse Regains Lead in Convergent Charging Market</p>
 							</div>
-							<p>Comverse Regains Lead in Convergent Charging Market</p>
 						</li>
 						<li class="more-subscribe u-clear-float">
-							<h4>Subscibe To Comverse</h4>
-							<div class="more-subscribe-form">
+							<a href="" class="u-plain-link"><h4>Subscibe To Comverse <span class="u-mobile">News</span></h4></a>
+							<div class="more-subscribe-form u-normal">
 								<input type="text" value="barakugav@gmail.com">
 								<a class="u-plain-link" href="">Sign In</a>
 							</div>
 						</li>
 						<li class="button-icons">
+							<span class="u-mobile"><span>Visit Us On:</span></span>
 							<a href=""><button id="youtube-button"></button></a>
 							<a href=""><button id="twitter-button"></button></a>
 							<a href=""><button id="inkdin-button"></button></a>
+						</li>
+						<li class="u-mobile">
+							<span>Change Language:</span>
+							<select name="" id="">
+								<option value="English">English</option>
+								<option value="Hebrew">Hebrew</option>
+								<option value="Arabic">Arabic</option>
+							</select>
 						</li>
 					</ul>
 				</li>
