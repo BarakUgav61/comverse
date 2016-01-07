@@ -13,7 +13,7 @@ body {
 /* nav
 ***************************************************/
 
-.nav .u-center-box {
+.nav .u-wrapper {
 	position: relative;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
@@ -58,7 +58,6 @@ body {
 	width: 7.5em;
 	position: absolute;
 	left: calc(50% - 3.75em);
-	cursor: pointer;
 }
 
 @media screen and (min-width: 601px) {
@@ -237,6 +236,10 @@ body {
 	padding-bottom: 0.25em;
 }
 
+.slides-container {
+	margin-bottom: 4em;
+}
+
 @media screen and (min-width: 601px) {
 
 	.main {
@@ -248,13 +251,20 @@ body {
 
 .main-title {
 	background-color: rgba(46, 149, 202, 0.8);
-	padding: 0.5em;
 }
 
 @media screen and (min-width: 601px) {
 
 	.main-title {
 		background-color: transparent;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.main-title {
+		padding: 0.5em;
 	}
 
 }
@@ -275,7 +285,6 @@ body {
 .main-learnmore .u-link-button {
 	display: inline-block;
 	margin-top: 0.5em;
-	margin-left: 0.5em;
 	margin-bottom: 8em;
 }
 
@@ -287,10 +296,20 @@ body {
 
 }
 
-.main-learnmore .u-clean-checkbox {
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 0.5em;
+@media screen and (max-width: 600px) {
+
+	.main-learnmore .u-link-button {
+		margin-left: 0.5em;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.slides-container .u-clean-checkbox {
+		margin-left: 0.5em;
+	}
+
 }
 
 #head p {
@@ -431,18 +450,28 @@ body {
 ***************************************************/
 
 .solutions {
-	background: linear-gradient(to right, #2E89B7, #57B5D4, #2E89B7);
+	background-image: url('img/weDoBG.png');
+	background-color: #3091C2;
+	background-color: rgba(48, 145, 194, 0.875);
 	color: white;
 }
 
-.solutions .u-center-box {
+@media screen and (min-width: 601px) {
+
+	.solutions {
+		background: linear-gradient(to right, #2E89B7, #57B5D4, #2E89B7);
+	}
+
+}
+
+.solutions .u-wrapper {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
 
 @media screen and (min-width: 601px) {
 
-	.solutions .u-center-box {
+	.solutions .u-wrapper {
 		padding-top: 2.5em;
 		padding-bottom: 2.5em;
 	}
@@ -576,14 +605,14 @@ body {
 	background-attachment: fixed;
 }
 
-.events .u-center-box {
+.events .u-wrapper {
 		padding-top: 2.5em;
 		padding-bottom: 1em;
 	}
 
 @media screen and (min-width: 601px) {
 
-	.events .u-center-box {
+	.events .u-wrapper {
 		padding-bottom: 2.5em;
 	}
 
@@ -711,7 +740,7 @@ body {
 	color: #424242;
 }
 
-.success-stories .u-center-box {
+.success-stories .u-wrapper {
 	padding-top: 2.5em;
 	padding-bottom: 1.5em;
 	position: relative;
@@ -830,34 +859,34 @@ body {
 /* more
 ***************************************************/
 
-.more {
+footer {
 	position: relative;
 	background-color: #292929;
 	color: #C7C7C7;
 	font-size: 0.75em;
 }
 
-.more .u-center-box {
+footer .u-wrapper {
 	padding-top: 0;
 	padding-bottom: 0;
 }
 
-.more h4 {
+footer h4 {
 	text-transform: uppercase;
 }
 
-.more .u-plain-link {
+footer .u-plain-link {
 	color: inherit;
 }
 
-.more .u-four-cols:last-child {
+footer .u-four-cols:last-child {
 	background-color: #3F3F3F;
 	padding: 1em;
 }
 
 @media screen and (max-width: 600px) {
 
-	.more .u-four-cols:last-child {
+	footer .u-four-cols:last-child {
 		width: 100%;
 		padding: 0;
 		background-color: #212121;
@@ -865,23 +894,23 @@ body {
 		vertical-align: middle;
 	}
 
-	.more .u-four-cols:last-child ul {
+	footer .u-four-cols:last-child ul {
 		color: white;
 		text-transform: uppercase;
 	}
 
-	.more .u-four-cols:last-child ul li {
+	footer .u-four-cols:last-child ul li {
 		height: 2em;
 		padding: 0.5em;
 		padding-left: 1em;
 		position: relative;
 	}
 
-	.more .u-four-cols:last-child ul li + li {
+	footer .u-four-cols:last-child ul li + li {
 		border-top: solid black 1px;
 	}
 
-	.more .u-four-cols:last-child h4 {
+	footer .u-four-cols:last-child h4 {
 		margin: 0;
 		font-weight: normal;
 	}
@@ -914,7 +943,7 @@ body {
 		width: 20%;
 	}
 
-	.more .u-four-cols:last-child select {
+	footer .u-four-cols:last-child select {
 		margin-left: 2em;
 		background-color: #444444;
 		border: none;
@@ -924,18 +953,18 @@ body {
 
 }
 
-.more .u-four-cols:last-child .u-date {
+footer .u-four-cols:last-child .u-date {
 	float: left;
 }
 
-.more .u-four-cols:last-child .u-date span {
+footer .u-four-cols:last-child .u-date span {
 	padding: 0;
 }
 
 
 @media screen and (min-width: 601px) {
 
-	.more .u-four-cols:last-child h4 {
+	footer .u-four-cols:last-child h4 {
 		color: #4EA7D3;
 		margin-top: 1em;
 		margin-bottom: 1.5em;
@@ -977,14 +1006,14 @@ body {
 
 @media screen and (min-width: 601px) {
 
-	.more .button-icons {
+	footer .button-icons {
 		position: absolute;
 		bottom: 0;
 	}
 
 }
 
-.more .button-icons button {
+footer .button-icons button {
 	border: none;
 	width: 2em;
 	height: 2em;
@@ -994,37 +1023,37 @@ body {
 	cursor: pointer;
 }
 
-.more .button-icons #youtube-button {
+footer .button-icons #youtube-button {
 	background-image: url('img/socialMenuIcon-youtube.png');
 }
 
-.more .button-icons #youtube-button:hover {
+footer .button-icons #youtube-button:hover {
 	background-image: url('img/socialMenuIcon-youtube_hover.png');
 }
 
-.more .button-icons #twitter-button {
+footer .button-icons #twitter-button {
 	background-image: url('img/socialMenuIcon-twitter.png');
 }
 
-.more .button-icons #twitter-button:hover {
+footer .button-icons #twitter-button:hover {
 	background-image: url('img/socialMenuIcon-twitter_hover.png');
 }
 
-.more .button-icons #inkdin-button {
+footer .button-icons #inkdin-button {
 	background-image: url('img/socialMenuIcon-linkdin.png');
 }
 
-.more .button-icons #inkdin-button:hover {
+footer .button-icons #inkdin-button:hover {
 	background-image: url('img/socialMenuIcon-linkdin_hover.png');
 }
 
-.more .u-copy-right {
+footer .u-copy-right {
 	margin: 0;
 }
 
 @media screen and (max-width: 600px) {
 
-	.more .u-copy-right {
+	footer .u-copy-right {
 		text-align: center;
 		background-color: #F7F7F7;
 		color: #212121;
@@ -1034,7 +1063,7 @@ body {
 
 @media screen and (min-width: 601px) {
 
-	.more .u-copy-right {
+	footer .u-copy-right {
 		position: absolute;
 		bottom: 0;
 	}
@@ -1044,16 +1073,16 @@ body {
 /* utility layout
 ***************************************************/
 
-.u-center-box {
+.u-wrapper {
 	box-sizing: border-box;
 	margin: auto;
 	width: 100%;
-	max-width: 800px;
+	max-width: 940px;
 }
 
 @media screen and (min-width: 601px) {
 	
-	.u-center-box {
+	.u-wrapper {
 		padding: 0.5em;
 	}
 
