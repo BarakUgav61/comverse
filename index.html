@@ -5,139 +5,135 @@
 	<title>Comverse</title>
 
 	<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header class="nav">
 		<div class="u-wrapper u-clear-fix">
 			<div class="login">
-				<select name="" id="">
+				<label class="u-hide-text" for="top-language-select">Language:</label>
+				<select id="top-language-select">
 					<option value="English">EN</option>
 					<option value="Hebrew">HE</option>
 					<option value="Arabic">AR</option>
 				</select>
-				<a class="u-plain-link" href="">Customer login</a>
+				<a class="u-plain-link" href="#">Customer login</a>
 			</div>
 
-			<span class="u-search">
+			<form action="" class="u-search">
 				<span id="search-bar">
-					<input type="text">
-					<a href="#" class="u-plain-link u-search-bar-close fa fa-close"></a>
+					<label class="u-hide-text" for="search-input">Search Input:</label>
+					<input type="text" id="search-input">
+					<a href="#" class="u-plain-link u-search-bar-close fa fa-close">search</a>
 				</span>
-				<a href="#search-bar"><button></button></a>
-			</span>
+				<a href="#search-bar"><button class="u-hide-text">search</button></a>
+			</form>
 
-			<a href=""><img class="logo" src="img/comverse-logo-medium.png" alt="Comverse Logo"></a>
+			<a href="#" class="u-hide-text">Logo<img class="logo" src="img/comverse-logo-medium.png" alt="Comverse Logo"></a>
 
-			<a href="#nav-bar"><button class="nav-button"></button></a>
-			<ul class="u-clean-list u-clear-fix" id="nav-bar">
-				<li><a class="u-plain-link" href="">Your Needs</a></li>
-				<li><a class="u-plain-link" href="">Out Portfolio</a></li>
-				<li><a class="u-plain-link" href="">News & Media</a></li>
-				<li><a class="u-plain-link" href="">About Converse</a></li>
-			</ul>
+			<a href="#nav-bar"><button class="nav-button u-hide-text">open nav</button></a>
+			<nav id="nav-bar">
+				<ul class="u-clean-list u-clear-fix">
+					<li><a class="u-plain-link" u-hide-text>Your Needs</a></li>
+					<li><a class="u-plain-link" href="#">Out Portfolio</a></li>
+					<li><a class="u-plain-link" href="#">News & Media</a></li>
+					<li><a class="u-plain-link" href="#">About Converse</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 
-	<div class="main u-clear-float">
+	<section class="slides u-clear-float">
 		<div class="u-wrapper">
-			
-			<div class="slides-container">
-				<ul class="slides u-clean-list">
-					<li id="slide1">
-						<div class="main-title">
-							<h1><span class="u-bold">Free</span> Your Markets From IT <span class="u-bold">Complexity</span></h1>
-							<p>
-								Comverse Policy Studio <br>
-								<span class="u-bold">1st</span> Ever Marketign-Oriented Policy Tool
-							</p>
-						</div>
-						<div class="main-learnmore">
-							<a class="u-plain-link u-link-button" href=""><span>Learn More</span></a>
-						</div>
-					</li>
-					<!-- more slides -->
-				</ul>
+			<ul class="slides-list u-clean-list">
+				<li class="slide">
+					<div class="slide-title">
+						<h1><span class="u-bold">Free</span> Your Markets From IT <span class="u-bold">Complexity</span></h1>
+						<p>
+							Comverse Policy Studio <br>
+							<span class="u-bold">1st</span> Ever Marketign-Oriented Policy Tool
+						</p>
+					</div>
+					<a class="slide-learnmore u-plain-link u-link-button" href="#"><span>Learn More</span></a>
 
-				<div class="u-clean-checkbox">
-					<input type="radio" name="lean-more" value="1" id="head-checkbox-1" checked="checked">
-					<label for="head-checkbox-1"><span>1</span></label>
-					<input type="radio" name="lean-more" value="2" id="head-checkbox-2">
-					<label for="head-checkbox-2"><span>2</span></label>
-					<input type="radio" name="lean-more" value="3" id="head-checkbox-3">
-					<label for="head-checkbox-3"><span>3</span></label>
-					<input type="radio" name="lean-more" value="4" id="head-checkbox-4">
-					<label for="head-checkbox-4"><span>4</span></label>
-				</div>
-			</div>
-
-			<ul class="u-margin-cols-container u-clean-list u-clear-float u-clear-fix" id="head">
-				<li class="u-three-margin-cols u-margin-col" id="head-1th-col">
-					<p>Comverse Is Value-Added Service Global Market Leader.</p>
-					<a class="u-plain-link" href=""><span>Read More</span></a>
+					<ul class="u-margin-cols-container u-clean-list u-clear-float u-clear-fix slide-tabs">
+						<li class="u-three-margin-cols u-margin-col pink">
+							<a href="#" class="u-full-size u-plain-link">
+								<p>Comverse Is Value-Added Service Global Market Leader.</p>
+								<a class="u-plain-link more-link" href="#"><span>Read More</span></a>
+							</a>
+						</li>
+						<li class="u-three-margin-cols u-margin-col green">
+							<a href="#" class="u-full-size u-plain-link">
+								<p>Managed Services World Congress September 18-19 Berlin, Germany</p>
+								<a class="u-plain-link more-link" href="#"><span>Read More</span></a>
+							</a>
+						</li>
+						<li class="u-three-margin-cols u-margin-col orange">
+							<a href="#" class="u-full-size u-plain-link">
+								<p>Comverse: Enabling a world of Conected Possibilities</p>
+								<a class="u-plain-link more-link" href="#"><span>Watch More</span></a>
+							</a>
+						</li>
+					</ul>
 				</li>
-				<li class="u-three-margin-cols u-margin-col" id="head-2th-col">
-					<p>Managed Services World Congress September 18-19 Berlin, Germany</p>
-					<a class="u-plain-link" href=""><span>Read More</span></a>
-				</li>
-				<li class="u-three-margin-cols u-margin-col" id="head-3th-col">
-					<p>Comverse: Enabling a world of Conected Possibilities</p>
-					<a class="u-plain-link" href=""><span>Watch More</span></a>
-				</li>
+				<!-- more slides -->
 			</ul>
-		</div>
-	</div>
 
-	<div class="solutions u-clear-float u-text-center">
+			<fieldset class="slides-selector u-clean-checkbox u-clean-fieldset">
+				<legend class="u-hide-text">Slide selector:</legend>
+				<input type="radio" name="lean-more" value="1" id="slide-checkbox-1" checked="checked">
+				<label for="slide-checkbox-1"><span>1</span></label>
+				<input type="radio" name="lean-more" value="2" id="slide-checkbox-2">
+				<label for="slide-checkbox-2"><span>2</span></label>
+				<input type="radio" name="lean-more" value="3" id="slide-checkbox-3">
+				<label for="slide-checkbox-3"><span>3</span></label>
+				<input type="radio" name="lean-more" value="4" id="slide-checkbox-4">
+				<label for="slide-checkbox-4"><span>4</span></label>
+			</fieldset>
+		</div>
+	</section>
+
+	<section class="solutions u-clear-float u-text-center">
 		<div class="u-wrapper">
 			<h2>What Can We Do For You?</h2>
-			<ul class="solutions-types u-clean-list u-clear-fix">
-				<li class="u-six-cols" id="solution-1">
-					<img src="img/solution_icon_biz-analitics.png" alt="">
-					<div class="solution-text">
+			<ul class="all-solutions u-clean-list u-clear-fix">
+				<li class="solution" id="solution-1">
+					<a href="#" class="u-plain-link">
+						<img src="img/solution_icon_biz-analitics.png" alt="">
 						<p>Data monetization</p>
-					</div>
+					</a>
 				</li>
-				<li class="u-six-cols" id="solution-2">
+				<li class="solution" id="solution-2">
 					<img src="img/solution_icon_diti-cx.png" alt="">
-					<div class="solution-text">
-						<p>Machine to machine (M2M)</p>
-					</div>
+					<p>Machine to machine (M2M)</p>
 				</li>
-				<li class="u-six-cols" id="solution-3">
+				<li class="solution" id="solution-3">
 					<img src="img/solution_icon_smart-money.png" alt="">
-					<div class="solution-text">
-						<p>Over-the-top (OTT)</p>
-					</div>
+					<p>Over-the-top (OTT)</p>
 				</li>
-				<li class="u-six-cols" id="solution-4">
+				<li class="solution" id="solution-4">
 					<img src="img/solution_icon_optimize-efficnt.png" alt="">
-					<div class="solution-text">
-						<p>Cloud computing</p>
-					</div>
+					<p >Cloud computing</p>
 				</li>
-				<li class="u-six-cols" id="solution-5">
+				<li class="solution" id="solution-5">
 					<img src="img/solution_icon_personal.png" alt="">
-					<div class="solution-text">
-						<p>Managed services</p>
-					</div>
+					<p>Managed services</p>
 				</li>
-				<li class="u-six-cols" id="solution-6">
+				<li class="solution" id="solution-6">
 					<img src="img/solution_icon_biz-transform.png" alt="">
-					<div class="solution-text">
-						<p>Social Media</p>
-					</div>
+					<p>Social Media</p>
 				</li>
 			</ul>
-			<a class="u-plain-link u-link-button" href=""><span>See all of our solutaions</span></a>
+			<a class="u-plain-link u-link-button" href="#"><span>See all of our solutaions</span></a>
 		</div>
-	</div>
+	</section>
 
-	<div class="events u-clear-float">
+	<section class="events u-clear-float">
 		<div class="u-wrapper">
 			<h2>What's Happening At Converse?</h2>
-			<div class="u-margin-cols-container u-clear-fix">
-				<div class="u-three-margin-cols u-margin-col" id="event-container-1">
+			<ul class="all-events u-margin-cols-container u-clear-list u-clear-fix">
+				<li class="u-three-margin-cols u-margin-col">
 					<h3>News</h3>
 					<div class="event u-clear-fix">
 						<div class="u-date">
@@ -146,9 +142,9 @@
 						</div>
 						<p class="event-content">Comverse Regains Lead in Convergent Charging Market Regains Lead in</p>
 					</div>
-					<a class="u-plain-link" href=""><span>All News</span></a>
-				</div>
-				<div class="u-three-margin-cols u-margin-col" id="event-container-2">
+					<a class="u-plain-link" href="#"><span>All News</span></a>
+				</li>
+				<li class="u-three-margin-cols u-margin-col">
 					<h3>Events</h3>
 					<div class="event u-clear-fix">
 						<div class="u-date">
@@ -157,9 +153,9 @@
 						</div>
 						<p class="event-content">Comverse Regains Lead in Convergent Charging Market Regains Lead in</p>
 					</div>
-					<a class="u-plain-link" href=""><span>All Events</span></a>
-				</div>
-				<div class="u-three-margin-cols u-margin-col" id="event-container-3">
+					<a class="u-plain-link" href="#"><span>All Events</span></a>
+				</li>
+				<li class="u-three-margin-cols u-margin-col">
 					<h3>Press Releases</h3>
 					<div class="event u-clear-fix">
 						<div class="u-date">
@@ -168,13 +164,13 @@
 						</div>
 						<p class="event-content">Comverse Regains Lead in Convergent Charging Market Regains Lead in</p>
 					</div>
-					<a class="u-plain-link" href=""><span>All Press releases</span></a>
-				</div>
-			</div>
+					<a class="u-plain-link" href="#"><span>All Press releases</span></a>
+				</li>
+			</ul>
 		</div>
-	</div>
+	</section>
 
-	<div class="success-stories u-clear-float">
+	<section class="success-stories u-clear-float">
 		<div class="u-wrapper u-text-center">
 			<h2>Success Stories</h2>
 			<div class="success-stories-content u-margin-cols-container u-clear-fix">
@@ -186,7 +182,7 @@
 						</div>
 						<div class="success-story-more u-three-one-row u-clear-float">
 							<div class="success-story-more-content">
-								<h5>Jonathan Pierce</h5>
+								<h3>Jonathan Pierce</h3>
 								<p>Group Mobile Architect</p>
 							</div>
 							<img src="img/cable_wireless_w100px_X_h42px2.jpg" alt="3Mod">
@@ -223,7 +219,7 @@
 						</div>
 						<div class="success-story-more u-three-one-row u-clear-float">
 							<div class="success-story-more-content">
-								<h5>Graeme Miller</h5>
+								<h3>Graeme Miller</h3>
 								<p>CEO</p>
 							</div>
 							<img src="img/Jersey_Telecom_w100px_X_h42px.jpg" alt="Jersey Telecom">
@@ -237,7 +233,7 @@
 						</div>
 						<div class="success-story-more u-three-one-row u-clear-float">
 							<div class="success-story-more-content">
-								<h5>Adele Kehassan</h5>
+								<h3>Adele Kehassan</h3>
 								<p>CIO</p>
 							</div>
 							<img src="img/multilinks.jpg" alt="multilinks">
@@ -254,11 +250,11 @@
 				</div>
 			</div>
 			
-			<a class="u-plain-link u-link-button u-clear-float" href=""><span>All 256 Success Stories</span></a>
+			<a class="u-plain-link u-link-button u-clear-float" href="#"><span>All 256 Success Stories</span></a>
 
-			<a href="#" class="u-up-button"></a>
+			<a href="#" class="u-up-button u-hide-text">Up</a>
 		</div>
-	</div>
+	</section>
 
 	<footer class="u-clear-float">
 		<div class="u-wrapper u-clear-fix">
@@ -266,43 +262,43 @@
 				<li class="u-four-cols u-normal">
 					<h4>Key Solutions</h4>
 					<ul class="u-clean-list">
-						<li><a href="" class="u-plain-link">Monetizing Data</a></li>
-						<li><a href="" class="u-plain-link">Over the Top (OTT)</a></li>
-						<li><a href="" class="u-plain-link">Machine to Machine (M2M)</a></li>
-						<li><a href="" class="u-plain-link">Cloud Computing</a></li>
-						<li><a href="" class="u-plain-link">Managed Services</a></li>
-						<li><a href="" class="u-plain-link">Customer Experience Management</a></li>
-						<li><a href="" class="u-plain-link">Rich Communication Suite (RCS)</a></li>
-						<li><a href="" class="u-plain-link">Social Media</a></li>
-						<li><a href="" class="u-plain-link">4G/LTE</a></li>
+						<li><a href="#" class="u-plain-link">Monetizing Data</a></li>
+						<li><a href="#" class="u-plain-link">Over the Top (OTT)</a></li>
+						<li><a href="#" class="u-plain-link">Machine to Machine (M2M)</a></li>
+						<li><a href="#" class="u-plain-link">Cloud Computing</a></li>
+						<li><a href="#" class="u-plain-link">Managed Services</a></li>
+						<li><a href="#" class="u-plain-link">Customer Experience Management</a></li>
+						<li><a href="#" class="u-plain-link">Rich Communication Suite (RCS)</a></li>
+						<li><a href="#" class="u-plain-link">Social Media</a></li>
+						<li><a href="#" class="u-plain-link">4G/LTE</a></li>
 					</ul>
 				</li>
 				<li class="u-four-cols u-normal">
 					<h4>Products & Services</h4>
 					<ul class="u-clean-list">
-						<li><a href="" class="u-plain-link">Billing</a></li>
-						<li><a href="" class="u-plain-link">VAS</a></li>
-						<li><a href="" class="u-plain-link">Mobile Internet</a></li>
-						<li><a href="" class="u-plain-link">Global Services</a></li>
-						<li><a href="" class="u-plain-link">Training Services</a></li>
+						<li><a href="#" class="u-plain-link">Billing</a></li>
+						<li><a href="#" class="u-plain-link">VAS</a></li>
+						<li><a href="#" class="u-plain-link">Mobile Internet</a></li>
+						<li><a href="#" class="u-plain-link">Global Services</a></li>
+						<li><a href="#" class="u-plain-link">Training Services</a></li>
 					</ul>
 				</li>
 				<li class="u-four-cols u-normal">
 					<h4>Company</h4>
 					<ul class="u-clean-list">
-						<li><a href="" class="u-plain-link">executive profiles</a></li>
-						<li><a href="" class="u-plain-link">clients</a></li>
-						<li><a href="" class="u-plain-link">investors</a></li>
-						<li><a href="" class="u-plain-link">partners</a></li>
-						<li><a href="" class="u-plain-link">corporate responsibillity</a></li>
-						<li><a href="" class="u-plain-link">industry involvement</a></li>
-						<li><a href="" class="u-plain-link">careers</a></li>
+						<li><a href="#" class="u-plain-link">executive profiles</a></li>
+						<li><a href="#" class="u-plain-link">clients</a></li>
+						<li><a href="#" class="u-plain-link">investors</a></li>
+						<li><a href="#" class="u-plain-link">partners</a></li>
+						<li><a href="#" class="u-plain-link">corporate responsibillity</a></li>
+						<li><a href="#" class="u-plain-link">industry involvement</a></li>
+						<li><a href="#" class="u-plain-link">careers</a></li>
 					</ul>
 				</li>
 				<li class="u-four-cols u-text-center">
 					<ul class="u-clean-list">
 						<li class="latest-blogs">
-							<span class="u-mobile"><a href="" class="u-plain-link">Contact Us</a></span>
+							<span class="u-mobile"><a href="#" class="u-plain-link">Contact Us</a></span>
 							<div class="u-normal">
 								<h4>Latest Blog Posts</h4>
 								<div class="u-date">
@@ -313,21 +309,22 @@
 							</div>
 						</li>
 						<li class="more-subscribe u-clear-float">
-							<a href="" class="u-plain-link"><h4>Subscibe To Comverse <span class="u-mobile">News</span></h4></a>
+							<a href="#" class="u-plain-link"><h4>Subscibe To Comverse <span class="u-mobile">News</span></h4></a>
 							<div class="more-subscribe-form u-normal">
-								<input type="text" value="barakugav@gmail.com">
-								<a class="u-plain-link" href="">Sign In</a>
+								<label for="email-input" class="u-hide-text">Email:</label>
+								<input type="text" value="barakugav@gmail.com" id="email-input">
+								<a class="u-plain-link" u-hide-text>Sign In</a>
 							</div>
 						</li>
 						<li class="button-icons">
 							<span class="u-mobile"><span>Visit Us On:</span></span>
-							<a href=""><button id="youtube-button"></button></a>
-							<a href=""><button id="twitter-button"></button></a>
-							<a href=""><button id="inkdin-button"></button></a>
+							<a href="https://www.youtube.com/"><button id="youtube-button" class="u-hide-text">Youtube</button></a>
+							<a href="https://twitter.com/"><button id="twitter-button" class="u-hide-text">Twitter</button></a>
+							<a href="https://www.linkedin.com/"><button id="linkedin-button" class="u-hide-text">Linkedin</button></a>
 						</li>
 						<li class="u-mobile">
-							<span>Change Language:</span>
-							<select name="" id="">
+							<label for="bottom-language-select">Change Language:</label>
+							<select id="bottom-language-select">
 								<option value="English">English</option>
 								<option value="Hebrew">Hebrew</option>
 								<option value="Arabic">Arabic</option>
