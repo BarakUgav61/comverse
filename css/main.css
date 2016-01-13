@@ -936,14 +936,11 @@ header .u-search {
 
 .events .event {
 	background-color: rgba(255, 255, 255, 0.35);
-	padding: 0.6em;
 	margin-bottom: 1em;
 	border-radius: 0.2em;
 }
-
 .events .event:hover {
 	background-color: rgba(255, 255, 255, 0.7);
-	cursor: pointer;
 }
 
 .event .u-date {
@@ -956,6 +953,14 @@ header .u-search {
 
 .event .u-date span:first-child {
 	border-bottom: dotted 1px white;
+}
+
+.event > .u-plain-link {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 0.6em;
 }
 
 .event-content {
@@ -977,20 +982,6 @@ header .u-search {
 	}
 }
 
-.events .u-plain-link {
-	position: relative;
-	width: 10em;
-	padding: 0.2em;
-	float: left;
-}
-
-
-
-.events .u-plain-link span {
-	position: absolute;
-	top: calc(50% - 0.5em);
-}
-
 @media screen and (max-width: 600px) {
 	.all-events > li {
 		padding: 1em;
@@ -999,7 +990,19 @@ header .u-search {
 	}
 }
 
-.all-events > li .u-plain-link::before {
+.events li > .u-plain-link {
+	position: relative;
+	width: 10em;
+	padding: 0.2em;
+	float: left;
+}
+
+.events li > .u-plain-link span {
+	position: absolute;
+	top: calc(50% - 0.5em);
+}
+
+.events li > .u-plain-link::before {
 	content: '';
 	background-repeat: no-repeat;
 	background-size: 1.35em 1.35em;
@@ -1009,22 +1012,22 @@ header .u-search {
 	float: left;
 }
 
-.all-events > li:nth-child(1) .u-plain-link::before {
+.all-events > li:nth-child(1) > .u-plain-link::before {
 	background-image: url('../img/eventListIconNews.png');
 }
-.all-events > li:nth-child(1) .u-plain-link:hover::before{
+.all-events > li:nth-child(1) > .u-plain-link:hover::before{
 	background-image: url('../img/eventListIconNews_hover.png');
 }
-.all-events > li:nth-child(2) .u-plain-link::before {
+.all-events > li:nth-child(2) > .u-plain-link::before {
 	background-image: url('../img/eventListIconEvents.png');
 }
-.all-events > li:nth-child(2) .u-plain-link:hover::before {
+.all-events > li:nth-child(2) > .u-plain-link:hover::before {
 	background-image: url('../img/eventListIconEvents_hover.png');
 }
-.all-events > li:nth-child(3) .u-plain-link::before {
+.all-events > li:nth-child(3) > .u-plain-link::before {
 	background-image: url('../img/eventListIconPress.png');
 }
-.all-events > li:nth-child(3) .u-plain-link:hover::before {
+.all-events > li:nth-child(3) > .u-plain-link:hover::before {
 	background-image: url('../img/eventListIconPress_hover.png');
 }
 
@@ -1209,6 +1212,7 @@ header .u-search {
 	left: 0;
 }
 .u-cell-image .hidden {
+	display: inline-block;
 	width: 100%;
 	height: 100%;
 	background-image: url('../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg');
@@ -1238,11 +1242,11 @@ header .u-search {
 	background-color: #3C9ECB;
 	font-size: 0.9em;
 	padding: 0.5em;
+	color: white;
 }
 .success-story .hidden p {
 	margin: 0;
 }
-
 .success-story {
 	box-sizing: border-box;
 	text-align: left;
@@ -1303,8 +1307,9 @@ header .u-search {
 
 .success-story-more img {
 	position: absolute;
-	right: 2px;
-	top: 2px;
+	right: 0.1em;
+	top: 0.1em;
+	width: 40%;
 }
 
 .success-stories .u-link-button {
@@ -1332,13 +1337,14 @@ header .u-search {
 
 footer {
 	position: relative;
-	background-color: black;
-	background-image: url('../img/weDoBG.png');
+	background-color: #272727;
+	// background-image: url('../img/weDoBG.png');
 	color: #C7C7C7;
 	font-size: 0.75em;
 }
 
 footer .u-wrapper {
+	background: inherit;
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -1352,25 +1358,29 @@ footer .u-plain-link {
 }
 
 footer .u-four-cols:last-child {
-	background-color: #3F3F3F;
 	padding: 1em;
 }
 
 @media screen and (max-width: 600px) {
+	footer ul {
+		background: inherit;
+	}
 	footer .u-four-cols:last-child {
+		background: inherit;
 		width: 100%;
 		padding: 0;
-		background-color: #212121;
 		text-align: left;
 		vertical-align: middle;
 	}
 
 	footer .u-four-cols:last-child ul {
+		background: inherit;
 		color: white;
 		text-transform: uppercase;
 	}
 
 	footer .u-four-cols:last-child ul li {
+		background: inherit;
 		height: 2em;
 		padding: 0.5em;
 		padding-left: 1em;
@@ -1433,6 +1443,9 @@ footer .u-four-cols:last-child .u-date span {
 
 
 @media screen and (min-width: 601px) {
+	footer .u-four-cols:last-child {
+		background-color: #404040;
+	}
 	footer .u-four-cols:last-child h4 {
 		color: #4EA7D3;
 		margin-top: 1em;
